@@ -1,0 +1,186 @@
+header {
+	.logo {
+		text-align: center;
+		a {
+			max-width: 198px;
+			display: inline-block;
+		}
+	}
+}
+
+main {
+
+	h1 {
+		padding-bottom: 2rem;
+	}
+}
+
+.main-headline {
+	line-height: 1.1666 !important;
+}
+
+section {
+	width: 100%;
+	&.all-wrap {
+		flex: 0 0 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+form {
+	[type=checkbox],
+	[type=file],
+	[type=radio] {
+		margin: 0 .5rem 0 0;
+		color: #fff;
+	}
+}
+
+.choice {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding: .5rem 1rem;
+	
+	[type=checkbox] {
+		position: absolute;
+		margin-top: 5px;
+		width: auto;
+		flex: 0 0 auto;
+		opacity: 0;
+		
+	&:checked + label:after {
+		opacity: 1;
+	}
+		
+	}
+	label {
+		cursor: pointer;
+		width: auto;
+		flex: 1 1 0px;
+		font-size: 14px;
+		line-height: 1.2;
+		position: relative;	
+		display: flex;
+	
+	&:before,
+	&:after {
+		content: '';
+	}
+	
+	&:before {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		width: 16px;
+		height: 16px;
+		flex: 0 0 16px;
+		background-color: #fff;
+		border: 1px solid $brand-blue;
+		margin-right: .5rem;
+	}
+
+	&:after {
+		position: absolute;
+		top: 5px;
+		left: 3px;
+		width: 10px;
+		height: 10px;
+		background-color: $brand-teal;
+		opacity: 0;
+	}
+		
+		@media screen and (min-width: 1024px) {
+			font-size: 16px;
+		} 
+		
+	}
+
+&.all-sections {
+	background-color: $brand-blue;
+	label {
+		color: #fff;
+
+	}		
+}
+	
+}
+
+.form-buttons {
+	
+}
+
+button {
+	font-size: 18px;
+	cursor: pointer;
+	width: 100%;
+	font-weight: 600;
+	padding: 1rem 2rem;
+	background-color: $brand-teal;
+	color: #fff;
+	border-radius: 30px;
+	margin-bottom: 1rem;
+	border: 0;
+	transition: background-color .25s ease;
+	
+	&:hover {
+		background-color: $brand-black;	
+	}
+	
+}
+
+#loader {
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.3);
+	transition: opacity .4s ease;
+	
+	.loader-card,
+	.inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.loader-card {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;		
+		margin: auto;
+		padding: 2rem;
+			
+		.inner {
+			height: 200px;
+			width: 250px;
+			background-color: #fff;
+			border-radius: 15px;
+		}
+	}
+	
+	.loading-gif {
+		img {
+			width: 100px;
+			height: 100px;
+			display: block;
+			margin: auto;
+		}
+		#loading-text {
+			font-size: 16px;
+		}
+	}
+	
+&.show {
+	visibility: visible;
+	opacity: 1;
+}
+	
+}
+

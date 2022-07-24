@@ -1,0 +1,226 @@
+
+// This contains fonts and styles from spiritaero.com. If the styles from that site were imported into this one or if this existed as a page on that site, this can be excluded.
+
+@import "../fonts/fonts.css";
+
+body {
+	font-family: Avenir LT W01_55 Roman1475520, Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	color: #000000;
+	-webkit-text-size-adjust: none;
+	background: #fff 50% 0 repeat;
+}
+
+
+p, ul, ol {
+	font-size: 18px;
+	font-family: Avenir LT W01_55 Roman1475520;
+	color: #757575;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 15px 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #444;
+	text-transform: none;
+}
+
+.main-headline {
+	font-size: 40px!important;
+}
+
+.blocks {
+	width: 100%;
+	display: inline-block;
+}
+
+.w-full {
+	width: 100%;
+}	
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-1 {
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+}
+
+.p-2 {
+	padding: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mt-16 {
+	margin-top: 4rem;
+}
+
+.mb-6 {
+	margin-bottom: 1.5rem;
+}
+
+.mb-16 {
+	margin-bottom: 4rem;
+}
+
+.p-2 {
+	padding: 0.5rem;
+}
+
+.article {
+	font-family: Avenir LT W01_55 Roman1475520;
+	clear: both;
+	max-width: 828px;
+	margin: 0 auto 10px;
+	
+	.headline {
+		color: $text-gray;
+		font-family: Avenir LT W01_85 Heavy1475544;
+		font-weight: normal;
+		font-style: normal;
+		font-size: 24px;
+		line-height: 28px;
+		margin: 0 0 15px 0;
+	}
+	
+	.copy {
+		line-height: 26px;
+		p {
+			margin: 0 0 26px 0;
+			padding: 0;
+		}
+	}
+	
+}
+
+.max-w-default {
+	max-width: 1080px;
+	width: 1080px;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mr-auto {
+	margin-right: auto;
+}
+
+.max-w-small {
+	max-width: 850px;
+	width: 850px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+.float-left {
+	float: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.single-funnel:first-child {
+	margin-right: 0;
+}
+
+.w-1\/2 {
+	width: 50%;
+}
+
+@media (min-width: 768px) {
+	.md\:text-left {
+		text-align: left;
+	}
+	.md\:flex-wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.md\:w-1\/4 {
+		width: 25%;
+	}
+	.md\:float-none {
+		float: none;
+	}
+	.md\:p-2 {
+		padding: 0.5rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.blocks {
+		padding: 10px 20px!important;
+	}
+}
+
+@media (max-width: 1200px) {
+	.max-w-small, .max-w-default {
+		width: 100%;
+		max-width: 100%;
+	}
+}
