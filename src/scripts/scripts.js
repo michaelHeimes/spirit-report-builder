@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 		const pdfDoc = await PDFDocument.create();
 		
-		const sourceUrl = '/assets/pdf/SPR902_CSR_2022_V14.pdf';
+		const sourceUrl = '/assets/pdf/SPR902_CSR_2021_V15.pdf';
 		
 		const sourcePdfBytes = await fetch(sourceUrl).then(res => res.arrayBuffer());
 		
@@ -19,11 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	  
 		const [cover] = await pdfDoc.copyPages(sourcePdfDoc, [0]);
 		pdfDoc.addPage(cover);		
-		
-		
-	   
-	
-	
 	
 		if (document.querySelectorAll('input[type="checkbox"]:checked').length ) {
 			
