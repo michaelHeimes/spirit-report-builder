@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	async function merge() {
 		
 		const pdfDoc = await PDFDocument.create();
-		
-		const sourceUrl = '/assets/pdf/SPR902_CSR_2021_V15.pdf';
+				
+		const sourceUrl = 'https://www.spiritaero.com/sustainability-report-builder/assets/pdf/SPR902_CSR_2021_V15.pdf';
 		
 		const sourcePdfBytes = await fetch(sourceUrl).then(res => res.arrayBuffer());
 		
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				fadeOutLoader();
 			}, 1000);
 			
-			download(pdfBytes, "merged-pdf.pdf", "application/pdf");
+			download(pdfBytes, "2021 Spirit AeroSystems Sustainability Report Builder.pdf", "application/pdf");
 	
 		} else {
 			alert("Please check chapters or sections before creating your report.");
